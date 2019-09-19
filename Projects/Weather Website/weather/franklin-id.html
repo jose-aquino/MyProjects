@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Franklin, ID | Weather Site</title>
+    <link rel="stylesheet" type="text/css" href="/weather/css/screen.css" media="screen">
+</head>
+<body>
+
+     <header id="page-header">
+       <img id = "logo" src="/weather/images/logo.jpg" alt="Weather Site Logo"> <span id="title">The Weather Site</span>        
+    </header> 
+    <nav class="navbar" id="nav1">
+      <ul>
+        <li><a href="/index.html" title="Go to the Weather Site home page">Home</a></li>
+        <li><a href="#" title="Search in the website">Search</a></li>
+        <li><a href="/weather/franklin-id.html" title="Franklin, ID weather">Franklin</a></li>
+        <li><a href="/weather/greenvilleWeather.html" title="Greenville">Greenville</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 id="locName">Franklin, ID</h1>
+        <section id="locInfo">
+            <ul>
+                <li><strong>Zip: </strong>83237 &nbsp;</li>
+                <li><strong> &nbsp; Elevation: </strong><span id="elevation">1514.246</span> ft &nbsp; </li>
+                <li><strong> &nbsp; Location: </strong>111.79&#176; N, 42.07&#176; W</li>
+            </ul>
+        </section>
+        <!-- Just add the id for each div or section. Also make some adjustments for your divs and sections. -->
+      <div id="curWeather" class="rain">
+        <section id="temps" class="tile">
+            <h3 class="subtitle">Temperature</h3> 
+            <h2>40F</h2>
+            <span class="first" >64&#176;F &nbsp; </span>  <span class="second">41&#176;F</span>
+            <p>Feels Like <span id ="feelTemp">??</span>&#176;F</p>
+        </section>
+        <section id="wind" class="tile">
+            <h3 class="subtitle">Wind</h3>
+            <!-- <img src="/weather/images/wind-pointer.png" alt="Wind Pointer"> -->
+            <div id="dial" class=""></div>
+                <p>5 mph</p>
+                    <p><strong>Direction: </strong><span id="direction">S</span></p>
+                    <p><strong>Gusts: </strong>10-12</p>
+        </section>
+        <section id="summary" class="tile">
+            <h3 id = "wDescription" class="subtitle">rain</h3>
+            <picture>
+              <source srcset="/weather/new-images/rain_270.jpg" media = "(max-width:450px)">
+              <img src="/weather/new-images/rain_440.jpg" alt="Summary">
+            </picture>
+        </section>
+      </div>
+        <section id="hourly">
+            <h3>Hourly Forecast</h3>
+            <p>10am: 41&#176;F <strong>|</strong> 11am: 41&#176;F <strong>|</strong> 12pm: 41&#176;F <strong>|</strong> 1pm: 41&#176;F <strong>|</strong> 2pm: 41&#176;F <strong>|</strong> 3pm: 41&#176;F <strong>|</strong> 4pm: 42&#176;F <strong>|</strong> 5pm: 44&#176;F <strong>|</strong> 6pm: 44&#176;F <strong>|</strong> 7pm: 46&#176;F <strong>|</strong> 8pm: 49&#176;F <strong>|</strong> 9pm: 51&#176;F <strong>|</strong> 10pm: 55&#176;F</p>
+        </section>
+     </main>
+     <footer>
+       <div class="foot">
+         &copy; 2019 - The Weather Site 
+       </div>
+         <nav class="navbar" id="nav2">
+           <ul>
+             <li><a href="/index.html" title="Go to the Weather Site home page">Home</a></li>
+             <li><a href="#" title="Search in the website">Search</a></li>
+             <li><a href="#" title="Franklin, ID weather">Franklin</a></li>
+             <li><a href="#" title="Greenville">Greenville</a></li>
+           </ul>
+         </nav>
+     </footer>
+     <script src="/weather/js/functions.js"></script>
+</body>
+</html>
+
+
